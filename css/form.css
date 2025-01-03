@@ -34,7 +34,7 @@ a{
     color: var(--clr-dark);
     border-color: var(--clr-grey);
 }
-/* navbar part */
+
 .header{
     min-height: calc(20vh - 80px);
     display: flex;
@@ -45,7 +45,7 @@ h3{
 
     margin-bottom: 10px;
 }
-/* Reset some default styles */
+
 body, h3, h5, label, input, select, button {
     margin: 0;
     padding: 0;
@@ -54,13 +54,13 @@ body, h3, h5, label, input, select, button {
 
 body {
     font-family: Arial, sans-serif;
-    background-color: none; /* Dark background */
-    color: #ecf0f1; /* Light text */
+    background-color: none; 
+    color: #ecf0f1; 
     padding: 20px;
 }
 
 form {
-    background-color: #64afe2; /* Form background */
+    background-color: #64afe2; 
     border-radius: 8px;
     padding: 20px;
     max-width: 600px;
@@ -88,14 +88,14 @@ select {
     padding: 10px;
     border: 1px solid #a6b3b6;
     border-radius: 5px;
-    background-color: #e8edec; /* Input background */
-    color: #34495e; /* Input text color */
+    background-color: #e8edec;
+    color: #34495e; 
 }
 
 input[type="radio"] {
     margin-right: 5px;
 }
-/* اضافه کردن استایل برای نمایش افقی radio buttons */
+
 .radio-group {
     display: flex;
     align-items: center;
@@ -106,16 +106,16 @@ input[type="file"] {
     padding: 10px;
     border: 1px solid #ecf0f1;
     border-radius: 5px;
-    background-color: #d6e0de; /* رنگ پس‌زمینه */
-    color: #34495e; /* رنگ متن */
-    cursor: pointer; /* نشانگر ماوس */
+    background-color: #d6e0de; 
+    color: #34495e; 
+    cursor: pointer; 
 }
 .radio-group label {
-    margin-right: 15px; /* فاصله بین برچسب‌ها */
+    margin-right: 15px; 
 }
 
 button {
-    background-color: #000000; /* Button color */
+    background-color: #000000; 
     color: white;
     border: none;
     padding: 10px 15px;
@@ -125,7 +125,7 @@ button {
 }
 
 button:hover {
-    background-color: #a5cee9; /* Darker on hover */
+    background-color: #a5cee9; 
 }
 
 .container {
