@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+    <form>
+        <h3>Personal Information:</h3>
+        <fieldset>
+            <div>
+           <label>First Name:</label>
+           <input type="text" >
+           <label>Last Name:</label>
+           <input type="text">
+           <label>Age:</label>
+           <input type="text">
+           </div>
+           <br>
+           <div>
+           <label>Email:</label>
+           <input type="email">
+           <label>Phone Number:</label>
+           <input type="text">
+           <label>Address:</label>
+           <input type="text">
+           </div>
+           <br>
+           <p>Gender:</p>
+           <div class="radio-group">
+           <label>Female</label>
+           <input type="radio" name="Gender">
+           <label>Male</label>
+           <input type="radio" name="Gender">
+           </div>
+            <p>State:</p>
+           <div class="radio-group">
+           <label>Single</label>
+           <input type="radio" name="State">
+           <label>Married</label>
+           <input type="radio" name="State">
+           </div>
+        </fieldset>
+        
+        <br>
+        <h3>Education:</h3>
+        <fieldset>
+            <div>
+                <select>
+                    <option>Secondary education</option>
+                    <option>Associate degree</option>
+                    <option>Bachelor’s degree (B.A)</option>
+                    <option>Master’s degree (M.A)</option>
+                    <option>Doctorate</option>
+                    <option>Post-doctorate</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label>Description:</label>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <la>From-To:</la>
+                <input type="text">
+            </div>
+            <br>
+            <div class="container text-center mt-2" id="aqAddB">
+                <button onclick="addNewAqField()" class="btn btn-primary btn-sm">+Add</button>
+            </div>
+
+        </fieldset>
+        <h3>Experience:</h3>
+        <fieldset>
+            <div>
+                <label>Job Position:</label>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <label>Description:</label>
+                <input type="text">
+            </div>
+            <br>
+            <div class="container text-center mt-2" id="aqAddB">
+                <button onclick="addNewAqField()" class="btn btn-primary btn-sm">+Add</button>
+            </div>
+     
+
+        </fieldset>
+<br>
+        <h3>Skill:</h3>
+        <fieldset>
+            <div>
+                <label>Skills:</label>
+                <input type="text">
+
+            </div>
+            <br>
+            <div class="container text-center mt-2" id="aqAddB">
+                <button onclick="addNewAqField()" class="btn btn-primary btn-sm">+Add</button>
+            </div>
+     
+            <br>
+            <div>
+                <label>Languages:</label>
+                <input type="text">
+            </div>
+            <br>
+            <div class="container text-center mt-2" id="aqAddB">
+                <button onclick="addNewAqField()" class="btn btn-primary btn-sm">+Add</button>
+            </div>
+     
+
+        </fieldset>
+        <br>
+        <h3>Projects:</h3>
+        <fieldset>
+            <div>
+                <label>Topic:</label>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <label>Description:</label>
+                <input type="text">
+            </div>
+            <br>
+            <div class="container text-center mt-2" id="aqAddB">
+                <button onclick="addNewAqField()" class="btn btn-primary btn-sm">+Add</button>
+            </div>
+     
+
+
+        </fieldset>
+        <br>
+        <h3>Articles:</h3>
+        <fieldset>
+            <div>
+                <input type="text">
+            </div>
+            <br>
+            <div class="container text-center mt-2" id="aqAddB">
+                <button onclick="addNewAqField()" class="btn btn-primary btn-sm">+Add</button>
+            </div>
+     
+        </fieldset>
+        <br>
+        <h3>Interests:</h3>
+        <fieldset>
+            <div>
+                <input type="text">
+            </div>
+            <br>
+            <div class="container text-center mt-2" id="aqAddB">
+                <button onclick="addNewAqField()" class="btn btn-primary btn-sm">+Add</button>
+            </div>
+     
+        </fieldset>
+        <br>
+        <h3>Social networks:</h3>
+        <fieldset>
+            <div>
+                <input type="text">
+            </div>
+            <br>
+            <div class="container text-center mt-2" id="aqAddB">
+                <button onclick="addNewAqField()" class="btn btn-primary btn-sm">+Add</button>
+            </div>
+
+         <h3>Upload Profile Picture:</h3>
+    <fieldset>
+        
+        <div>
+            <input type="file" id="profilePic" name="profilePic" accept="image/*">
+        </div>
+    </fieldset>
+        </fieldset>
+        <section class = "header bg-bright" id = "header">
+            <div class = "header-content text-center">
+                <a href = "../html/cv.html" class = "btn btn-primary text-uppercase">create my resume</a>
+            </div>
+        
+    </section>
+
+
+    </form>
+    
+</body>
+</html>
