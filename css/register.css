@@ -1,0 +1,163 @@
+*{
+    font-family: 'my_font';
+}
+@font-face {
+    font-family: 'my_font';
+    src: url(../font/Vazir-Bold.ttf);
+}
+body{
+    background-image: url(../image/artistic-blurry-colorful-wallpaper-background\ \(1\).jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.form-section{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 700px;
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 20px;
+}
+.form-section img{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 15px;
+}
+.form-section svg{
+    position: relative;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+}
+.form-section input:not(#male):not(#female){
+    direction: rtl;
+    background: none;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 8px;
+    width:270px;
+    height: 40px;
+}
+.circle{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 50%;
+}
+.c1{
+    width: 50px;
+    height: 50px;
+    background-color: #2196F3;
+    top: 20px;
+}
+.c2{
+    width: 30px;
+    height: 30px;
+    top: -20px;
+    background-color: white;
+}
+.register-title{
+    position: relative;
+    left: 175px;
+    top: -20px;
+}
+
+.input{
+    position: relative;
+    top: -25px;
+    left: 65px;
+    opacity: 0.4;
+    width: 320px;
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.email:has(#email:focus){
+    border-color: #2196F3;
+}
+#email:focus::placeholder{
+    color: #2196F3;
+}
+.input:has(input:focus){
+    opacity: 1;
+    color: #2196F3;
+    border-color: #2196F3;
+}
+.input input:focus::placeholder{
+    color: #2196F3;
+}
+.gender{
+    position: relative;
+    left: 300px;
+    top: -30px;
+    /* opacity: 0.5; */
+}
+.gender img{
+    position: relative;
+    left: 42px;
+    opacity: 0.5;
+}
+.gender p{
+    position: relative;
+    top: -32px;
+    right: 10px;
+    opacity: 0.3;
+    font-size: 14px;
+} 
+.male{
+    position: relative;
+    direction: rtl;
+    right: 380px;
+    top: -25px;
+    opacity: 0.5;
+}
+.female{
+    position: relative;
+    right: 450px;
+    direction: rtl;
+    top: -50px;
+    opacity: 0.5;
+}
+.male:has(input:focus){
+    color: #2196F3;
+    opacity: 1;
+}
+.female:has(input:focus){
+    color: #2196F3;
+    opacity: 1;
+}
+#line{
+    position: relative;
+    right: 300px;
+    width: 318px;
+    top: -50px;
+
+}
+.password{
+    position: relative;
+    top: -80px;
+}
+.password-again{
+    position: relative;
+    top: -80px;
+}
+#register-btn{
+    display: block;
+    background-color: #2196F3;
+    width: 350px;
+    height: 45px;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    padding-top:5px ;
+}

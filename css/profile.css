@@ -1,0 +1,352 @@
+*{
+    font-family: 'my_font';
+}
+@font-face {
+    font-family: 'my_font';
+    src: url(../font/Vazir-Bold.ttf);
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+@media (min-width:970px){
+    .container{
+        display: flex;
+    }
+    .profile-section{
+        width: 25%;
+        position: absolute;
+        height: 60%;
+        box-shadow: 2px 2px 5px gray;
+        border-radius: 15px;
+        top: 150px;
+        align-items: center;
+        align-content: center;
+        right: 10%;
+    }
+    #profile-image{
+        display: inline;
+        position: relative;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        box-shadow: 2px 2px 5px gray;
+        top: 10px;
+        left: -50%;
+        transform: translate(50%,0);
+    }
+    .profile-section svg{
+        width: 25px;
+        height: 25px;
+    }
+    #name{
+        
+        position: relative;
+        right:45%;
+        /* transform: translate(50%,0); */
+        color: #2196F3;
+    
+    }
+    #student{
+        position: relative;
+        color: #2195f390;
+        font-size: small;
+        right: 8px;
+    }
+    #job-icon{
+        position: relative;
+        right: 8px;
+        top: 10px;
+    }
+    #job{
+        position: relative;
+        top: -32px;
+        right: 40px;
+        font-size: 14px;
+    }
+    #programmer{
+        position: relative;
+        font-size: 14px;
+        top: -75px;
+        right: 70%;
+    
+    }
+    .line{
+        position: relative;
+        width: 95%;
+        opacity: 0.3;
+    }
+    .l2{
+        position: relative;
+        top: -70px;
+    }
+    .l3{
+        position: relative;
+        top: -145px;
+    }
+    #track-record-icon{
+        position: relative;
+        top: -65px;
+        right: 8px;
+    }
+    #track-record{
+        position: relative;
+        top: -108px;
+        right: 40px;
+        font-size: 14px;
+    }
+    #track-record-years{
+        position: relative;
+        top: -150px;
+        right: 75%;
+    }
+    #details{
+        width: 70%;
+        height: 40px;
+        position: relative;
+        top: -120px;
+        right: 15%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px gray;
+        border: none;
+        background-color: #2196F3;
+        color: white;
+    }
+    .form-section{
+        display: inline-flex;
+        box-shadow: 2px 2px 5px gray;
+        position: absolute;
+        flex-direction: column;
+        height: 60%;
+        width: 45%;
+        right: 37%;
+        top: 150px;
+        border-radius: 15px;
+    }
+    .form-section h1{
+        position: relative;
+        right: 20px;
+    }
+    .form-section hr{
+        opacity: 0.3;
+    }
+    .form-section input{
+    
+        display: inline;
+        position: relative;
+        width: 70%;
+        height: 40px;
+        border: 1px solid rgba(128, 128, 128, 0.4);
+        border-radius: 10px;
+        background:none;
+    }
+    #username-label{
+        position: relative;
+        right: 2%;
+        
+    
+    }
+    #username{
+        position: relative;
+        right: 20%;
+        top: -7%;
+    }
+    #email{
+        position: relative;
+        right: 20%;
+    }
+    #email-label{
+        position: relative;
+        top: 7%;
+        right: 2%;
+    
+    }
+    #password{
+        position: relative;
+        right: 20%;
+        top: 7%;
+    
+    }
+    #password-label{
+        position: relative;
+        right: 2%;
+        top: 14%;
+    }
+    #save{
+        width: 20%;
+        height: 35px;
+        background-color: #2196F3;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px gray;
+        color: white;
+        position: relative;
+        top: 14%;
+        right: 70%;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .container {
+        flex-direction: column;
+    }
+    .profile-section, .form-section {
+        justify-self: center;
+        box-shadow: 2px 2px 5px gray;
+        border-radius: 15px;
+        width: 70%;
+        position: relative;
+        margin-bottom: 20px;
+        height:30%;
+        text-align: center;
+    }
+    #profile-image{
+        display: inline;
+        position: relative;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        box-shadow: 2px 2px 5px gray;
+        top: 10px;
+    }
+    .profile-section svg{
+        width: 25px;
+        height: 25px;
+    }
+    #name{
+        color: #2196F3;
+    }
+    #student{
+        position: relative;
+        color: #2195f390;
+        font-size: small;
+        justify-self: right;
+        right: 6%;
+    }
+    #job-icon{
+        position: relative;
+        right: -39.5%;
+        top: 5px;
+    }
+    #job{
+        display: inline;
+        position: relative;
+        right: -34.5%;
+        font-size: 14px;
+    }
+    #programmer{
+        position: relative;
+        font-size: 14px;
+        top: -38px;
+        right: 35%;
+    
+    }
+    .line{
+        position: relative;
+        width: 95%;
+        opacity: 0.3;
+    }
+    .l2{
+        position: relative;
+        top: -30px;
+    }
+    .l3{
+        position: relative;
+        top: -100px;
+    }
+    #track-record-icon{
+        position: relative;
+        top: -20px;
+        right: -42%;
+    }
+    #track-record{
+        position: relative;
+        top: -65px;
+        right: -30%;
+        font-size: 14px;
+    }
+    #track-record-years{
+        position: relative;
+        top: -103px;
+        right: 35%;
+    }
+    #details{
+        width: 70%;
+        height: 40px;
+        position: relative;
+        top: -70px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px gray;
+        border: none;
+        background-color: #2196F3;
+        color: white;
+    }
+    .form-section{
+        display: inline-flex;
+        box-shadow: 2px 2px 5px gray;
+        position: absolute;
+        flex-direction: column;
+        height: 60%;
+        width: 69%;
+        border-radius: 15px;
+        right: 15.5%;
+    }
+    .form-section h1{
+        position: relative;
+        right: 20px;
+    }
+    .form-section hr{
+        opacity: 0.3;
+    }
+    .form-section input{
+        display: inline;
+        position: relative;
+        width: 70%;
+        height: 40px;
+        border: 1px solid rgba(128, 128, 128, 0.4);
+        border-radius: 10px;
+        background:none;
+    }
+    #username-label{
+        position: relative;
+        top: -33px;
+    
+    }
+    #username{
+        position: relative;
+        right: 15%;
+        top: -7%;
+    }
+    #email{
+        position: relative;
+        right: 15%;
+    }
+    #email-label{
+        position: relative;
+        top: -5px;
+    
+    }
+    #password{
+        position: relative;
+        right: 15%;
+        top: 7%;
+    
+    }
+    #password-label{
+        position: relative;
+        top: 22px;
+    }
+    #save{
+        width: 70%;
+        height: 40px;
+        background-color: #2196F3;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px gray;
+        color: white;
+        position: relative;
+        right: 15% ;
+        top: 50px;
+       
+    }
+
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Dashboard</title>
+    <link rel="stylesheet" href="../css/result.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>کیفیت رزومه‌ی شما</h2>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-bar-inner"></div>
+                </div>
+                <p>70٪ کامل شده</p>
+                <div class = "header-content text-center">
+                    <a href = "../html/cv.html" class = "btn">تکمیل رزومه</a>
+                </div>
+                <ul class="suggestions">
+                    <li>+10٪ ترجیحات شغلی خود را مشخص کنید.</li>
+                    <li>+7٪ رزومه‌ی ضمیمه به پروفایل خود اضافه کنید.</li>
+                    <li>+5٪ سوابق تحصیلی بیشتری اضافه کنید.</li>
+                </ul>
+            </div>
+            <a href="../html/centeral_page_after.html" class="btn-home" target="_parent">صفحه اصلی</a>
+        </div>
+        <div class="main-content">
+            <div class="tabs">
+                <div class="tab active" data-tab="all">همه</div>
+                <div class="tab" data-tab="submitted">ارسال به کارفرما</div>
+                <div class="tab" data-tab="reviewed">بررسی‌شده</div>
+                <div class="tab" data-tab="hired">استخدام</div>
+                <div class="tab" data-tab="interview">مصاحبه</div>
+                <div class="tab" data-tab="other">سایر</div>
+            </div>
+            <div class="tab-content" id="all">
+                <div class="job-listing">
+                    <div class="job-title">کارآموز برنامه نویسی ASP.Net</div>
+                    <div class="job-details">در انتظار بررسی کارفرما</div>
+                    <div class="job-details">راهکارهای نرم‌افزاری پارسان | تاریخ ارسال درخواست: ۱۱ تیر ۱۴۰۳</div>
+                </div>
+                <div class="job-listing">
+                    <div class="job-title">کارآموز هوش تجاری (BI)</div>
+                    <div class="job-details">ردشده</div>
+                    <div class="job-details">سان | تاریخ ارسال درخواست: ۱۱ تیر ۱۴۰۳</div>
+                </div>
+            </div>
+            <div class="tab-content" id="submitted" style="display: none;">
+                <div class="job-listing">
+                    <div class="job-title">مهندس نرم‌افزار</div>
+                    <div class="job-details">در انتظار تایید</div>
+                    <div class="job-details">شرکت سامان | تاریخ ارسال درخواست: ۲۰ شهریور ۱۴۰۳</div>
+                </div>
+                <div class="job-listing">
+                    <div class="job-title">کارشناس شبکه</div>
+                    <div class="job-details">ارسال شده به کارفرما</div>
+                    <div class="job-details">شرکت فناوران | تاریخ ارسال درخواست: ۵ مهر ۱۴۰۳</div>
+                </div>
+            </div>
+            <div class="tab-content" id="reviewed" style="display: none;">
+                <div class="job-listing">
+                    <div class="job-title">تحلیل‌گر داده‌ها</div>
+                    <div class="job-details">بررسی‌شده توسط کارفرما</div>
+                    <div class="job-details">شرکت داده‌کاوی | تاریخ ارسال درخواست: ۲۵ مرداد ۱۴۰۳</div>
+                </div>
+                <div class="job-listing">
+                    <div class="job-title">مدیر پروژه</div>
+                    <div class="job-details">در حال بررسی</div>
+                    <div class="job-details">شرکت توسعه‌یار | تاریخ ارسال درخواست: ۱۵ شهریور ۱۴۰۳</div>
+                </div>
+            </div>
+            <div class="tab-content" id="hired" style="display: none;">
+                <div class="job-listing">
+                    <div class="job-title">برنامه‌نویس جاوا</div>
+                    <div class="job-details">استخدام‌شده</div>
+                    <div class="job-details">شرکت نوآوران | تاریخ ارسال درخواست: ۱۰ تیر ۱۴۰۳</div>
+                </div>
+            </div>
+            <div class="tab-content" id="interview" style="display: none;">
+                <div class="job-listing">
+                    <div class="job-title">مهندس امنیت</div>
+                    <div class="job-details">دعوت به مصاحبه</div>
+                    <div class="job-details">شرکت امن‌ساز | تاریخ ارسال درخواست: ۱ مرداد ۱۴۰۳</div>
+                </div>
+            </div>
+            <div class="tab-content" id="other" style="display: none;">
+                <div class="job-listing">
+                    <div class="job-title">کارآموز دیجیتال مارکتینگ</div>
+                    <div class="job-details">سایر</div>
+                    <div class="job-details">شرکت تبلیغات‌چی | تاریخ ارسال درخواست: ۷ تیر ۱۴۰۳</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/result.js"></script>
+</body>
+</html>
+
+

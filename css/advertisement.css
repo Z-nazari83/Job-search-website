@@ -1,0 +1,112 @@
+body {
+    font-family: 'my_font';
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    
+    
+    
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+@font-face {
+    font-family: 'my_font';
+    src: url(../font/Vazir-Bold.ttf);
+}
+
+.header {
+    position:fixed;
+    box-shadow: rgba(0, 0, 0, 0.1) 2px 2px 5px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    background: rgba(255, 255, 255, 0.471);
+    border-radius: 15px;
+    padding: 10px 20px; 
+    text-align: center;
+    width: 100%; 
+    max-width: 900px; 
+    height: 80px;
+}
+.header p {
+    color: #6a1b9a;
+    font-size: 20px; 
+    top: 20px;
+    text-shadow: 2px 2px 5px gray;
+}
+
+.job-list-container {
+    
+    max-width: 900px;
+    margin: 110px auto; 
+    padding: 20px;
+    background:  rgba(255, 255, 255, 0.471);
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-item {
+    background: #bbdefbd1;
+    border: 1px solid #BBDEFB;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.job-item:hover {
+    background: #64B5F6;
+}
+
+.job-header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.job-header h3 {
+    text-shadow: 2px 2px 5px gray;
+    font-size: 18px;
+    color: #6a1b9a;
+    margin: 0;
+}
+
+.badge {
+    font-family: 'my_font';
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
+    background: #f06292;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-top: 5px;
+    align-self: start;
+}
+
+.apply-btn {
+    box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 5px;
+    background: #ab47bc;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+    font-family: 'my_font';
+}
+
+.apply-btn:hover {
+    background: #8e24aa;
+}
+
+.job-details {
+    display: none;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4a148c;
+    line-height: 1.6;
+}

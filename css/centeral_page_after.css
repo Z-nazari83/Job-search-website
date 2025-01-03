@@ -1,0 +1,481 @@
+*{
+    font-family: 'my_font';
+}
+@font-face {
+    font-family: 'my_font';
+    src: url(../font/Vazir-Bold.ttf);
+}
+body{
+    background-image: url(../image/artistic-blurry-colorful-wallpaper-background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+#toggleSidebar{
+    position: fixed;
+    width: 40px;
+    height: 70px;
+    background-color: rgba(0, 255, 255, 0.319);
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    transition: right 0.3s;
+    top: 250px;
+    right: 0px;
+    border: none;
+    
+}
+#toggleSidebar svg{
+    padding-top: 5px;
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+
+}
+.profile{
+    background: none;
+    top: 30px;
+    left:5%;
+}
+.profile img:hover{
+    border:2px solid #2979FF;
+}
+
+.notification{
+    width: 51px;
+    height: 51px;
+    top: 35px;
+    left: 11%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+    background-color: aliceblue;
+    color:#54b5ff;
+}
+.notification:hover{
+    border:2px solid #2979FF;
+}
+
+.side_bar_items {
+
+    width: 60px;
+    background-color: rgba(0, 255, 255, 0);
+    padding: 10px 0;
+    height: 450px;
+    position: fixed;
+    top: 200px;
+    right: -60px; 
+    transition: right 0.3s;
+    border-radius: 30px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.448);
+}
+
+.side_bar_items.show {
+    right:20px;
+}
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0;
+    gap: 7px;
+    cursor: pointer;
+}
+
+.icon-container svg:hover {
+    color: #304FFE;
+}
+
+.icon-container svg {
+    fill: #333;
+    width: 24px;
+    height: 24px;
+}
+
+.hidden-text {
+    display: none;
+    top: 8px;
+    text-decoration: none;
+    color: black;
+}
+
+.icon-container.active .hidden-text {
+    display: inline-block;
+}
+
+.side_bar_items button{
+    background: none;
+    border: none;
+}
+.side_bar_items button:focus{
+    color: #304FFE;
+    text-shadow: 2px 2px 5px gray;
+}
+.side_bar_items a:hover{
+    color: #304FFE;
+    text-shadow: 2px 2px 5px gray;
+}
+
+@media (min-width:1024px){
+    .header{
+        direction: rtl;
+        position: fixed;
+        width: 100%;
+        height:14%;
+        border-radius: 20px;
+        display:inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        
+    }
+    .logo{
+        position: relative;
+        display: inline;
+
+    }
+    .logo img{
+        width: 110px;
+        height: 110px;
+        position: relative;
+        right: 10px;
+        filter:drop-shadow(2px 2px 5px rgb(81, 73, 73));
+        background-color: transparent;
+    }
+    .header h4{
+        display: inline;
+        position: relative;
+        font-size: 13.5px;
+        justify-self: center;
+        text-shadow: 2px 2px 6px rgb(81, 73, 73);
+    }
+    .header-items{
+        direction: rtl;
+        display: inline-flex;
+        gap: 45px;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%,0);
+    }
+    .header button{
+        text-decoration: none;
+        position: absolute;
+        display: inline;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 5px;
+        border: none;
+       
+    }
+    .profile img{
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+    
+    }
+    .profile{
+        background: none;
+        top: 30px;
+        left:5%;
+    }
+    .profile img:hover{
+        border:2px solid #2979FF;
+    }
+    
+    .notification{
+        width: 51px;
+        height: 51px;
+        top: 35px;
+        left: 11%;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+        background-color: aliceblue;
+        color:#54b5ff;
+    }
+    .notification:hover{
+        border:2px solid #2979FF;
+    }
+    .frame{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,0);
+        border-radius: 2px 2px 5px gray;
+    }
+    
+}
+@media (min-width:768px) and (max-width:1024px) {
+    .header{
+        direction: rtl;
+        position: fixed;
+        width: 100%;
+        height:14%;
+        border-radius: 20px;
+        display:inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        
+    }
+    .logo{
+        position: relative;
+        display: inline;
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        right: 10px;
+        filter:drop-shadow(2px 2px 5px rgb(81, 73, 73));
+        background-color: transparent;
+    }
+    .header button{
+        text-decoration: none;
+        position: absolute;
+        display: inline;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 5px;
+        border: none;
+       
+    }
+    .profile img{
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+    
+    }
+    .profile{
+        background: none;
+        top: 30px;
+        left: 4%;
+    }
+    .profile img:hover{
+        border:2px solid #2979FF;
+    }
+    .notification{
+        width: 51px;
+        height: 51px;
+        top: 35px;
+        left: 13%;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+        background-color: aliceblue;
+        color:#54b5ff;
+    }
+    .notification:hover{
+        border:2px solid #2979FF;
+    }
+    .header h4{
+        display: inline;
+        position: relative;
+        font-size: 13.5px;
+        justify-self: center;
+        text-shadow: 2px 2px 6px rgb(81, 73, 73);
+    }
+    .header-items{
+        direction: rtl;
+        display: none;
+        gap:45px;
+        position: relative;
+    }
+    .frame{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,0);
+        border-radius: 2px 2px 5px gray;
+    }
+    
+}
+@media (min-width:550px) and (max-width:768px) {
+    .header{
+        direction: rtl;
+        position: fixed;
+        width: 100%;
+        height:14%;
+        border-radius: 20px;
+        display:inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        
+    }
+    .logo{
+        position: relative;
+        display: inline;
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        right: 10px;
+        filter:drop-shadow(2px 2px 5px rgb(81, 73, 73));
+        background-color: transparent;
+    }
+    .header button{
+        text-decoration: none;
+        position: absolute;
+        display: inline;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 5px;
+        border: none;
+       
+    }
+    .profile img{
+        width: 50px;
+        height: 50px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+    
+    }
+    .profile{
+        background: none;
+        top: 30px;
+        left: 2%;
+    }
+    .profile img:hover{
+        border:2px solid #2979FF;
+    }
+    
+    .notification{
+        width: 51px;
+        height: 51px;
+        top: 35px;
+        left: 13%;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+        background-color: aliceblue;
+        color:#54b5ff;
+    }
+    .notification:hover{
+        border:2px solid #2979FF;
+    }
+    .header h4{
+        display: inline;
+        position: relative;
+        font-size: 13.5px;
+        justify-self: center;
+        text-shadow: 2px 2px 6px rgb(81, 73, 73);
+    }
+    .header-items{
+        direction: rtl;
+        display: none;
+        gap:45px;
+        position: relative;
+    }
+    .frame{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,0);
+        border-radius: 2px 2px 5px gray;
+    }
+    
+}
+@media (max-width:550px) {
+    .header{
+        direction: rtl;
+        position: fixed;
+        width: 100%;
+        height:14%;
+        border-radius: 20px;
+        display:inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1500px;
+        margin: 0 auto;
+        
+    }
+    .logo{
+        position: relative;
+        display: inline;
+    }
+    .logo img{
+        width: 100px;
+        height: 100px;
+        position: relative;
+        right: 10px;
+        filter:drop-shadow(2px 2px 5px rgb(81, 73, 73));
+        background-color: transparent;
+    }
+    .header button{
+        text-decoration: none;
+        position: absolute;
+        display: inline;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+        padding-top: 5px;
+        border: none;
+       
+    }
+    .profile img{
+        width: 45px;
+        height: 45px;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+    
+    }
+    .profile{
+        background: none;
+        top: 30px;
+        left: 0;
+    }
+    .profile img:hover{
+        border:2px solid #2979FF;
+    }
+    
+    .notification{
+        width: 45px;
+        height: 45px;
+        top: 35px;
+        left: 17%;
+        border-radius: 20px;
+        box-shadow: 2px 2px 5px gray;
+        background-color: aliceblue;
+        color:#54b5ff;
+    }
+    .notification:hover{
+        border:2px solid #2979FF;
+    }
+    .header h4{
+        display: inline;
+        position: relative;
+        font-size: 13.5px;
+        justify-self: center;
+        text-shadow: 2px 2px 6px rgb(81, 73, 73);
+    }
+    .header-items{
+        direction: rtl;
+        display: none;
+        gap:45px;
+        position: relative;
+    }
+    .frame{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,0);
+        border-radius: 2px 2px 5px gray;
+    }
+    
+}

@@ -1,0 +1,144 @@
+*{
+    font-family: 'my_font';
+}
+@font-face {
+    font-family: 'my_font';
+    src: url(../font/Vazir-Bold.ttf);
+}
+body{
+   background-image: url(../image/artistic-blurry-colorful-wallpaper-background\ \(1\).jpg);
+   background-attachment: fixed;
+   background-size: cover;
+}
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 450px;
+    height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px gray;
+}
+.circle{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    border-radius: 50%;
+}
+.c1{
+    width: 50px;
+    height: 50px;
+    background-color: #2196F3;
+    top: 20px;
+}
+.c2{
+    width: 30px;
+    height: 30px;
+    top: -20px;
+    background-color: white;
+}
+
+form svg{
+    width: 34px;
+    height: 34px;
+}
+.login_tilte{
+    position: relative;
+    left: 195px;
+    top: -20px;
+}
+form input:not(#male, #female){
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+    width:270px;
+    height: 40px;
+    border: none;
+    background: none;
+    outline: none;
+    direction: rtl;
+}
+.email{
+    position: relative;
+    left: 40px;
+    top: -20px;
+    width: 370px;
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+
+#email-label{
+    position: relative;
+    left: 55px;
+    top: 10px;
+    opacity: 0.4;
+}
+#password-label{
+    position: relative;
+    left: 55px;
+    top: 10px;
+    opacity: 0.4;
+}
+.password{
+    position: relative;
+    top: -20px;
+    left: 40px;
+    width: 370px;
+    height: 50px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.4);
+}
+.email:has(#email:focus){
+    border-color: #2196F3;
+}
+#email:focus + label{
+    color: #2196F3;
+    opacity: 1;
+}
+#email:focus::placeholder{
+    color: #2196F3;
+}
+
+.password:has(#password:focus){
+    border-color: #2196F3;
+}
+#password:focus + label{
+    color: #2196F3;
+    opacity: 1;
+}
+#password:focus::placeholder{
+    color: #2196F3;
+}
+.login-button{
+    display: block;
+    background-color: #2196F3;
+    width: 350px;
+    height: 45px;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%,0);
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    color: black;
+}
+#register-link{
+    position: relative;
+    text-decoration: none;
+    color: #2196F3;
+    top:80px;
+    left: 110px;
+    font-size:14px;
+}
+#forget-link{
+    position: relative;
+    text-decoration: none;
+    color: #2196F3;
+    top:120px;
+    left: 182px;
+    font-size:14px;
+}

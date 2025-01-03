@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    font-family: 'my-font';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'my-font';
+    src: url(../font/Vazir-Bold.ttf);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    height: calc(100vh - 40px);
+}
+
+.sidebar, .main-content {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    flex-basis: 25%;
+}
+
+.main-content {
+    flex-basis: 75%;
+}
+
+h2 {
+    color: #007bff;
+    text-align: center;
+}
+
+.progress-container {
+    position: relative;
+    text-align: center;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 10px 0;
+}
+
+.progress-bar-inner {
+    width: 70%;
+    height: 20px;
+    background-color: #4caf50;
+}
+
+.btn, .btn-home {
+    display: block;
+    width: calc(100% - 20px);
+    padding: 10px;
+    background-color: #007bff; 
+    color: #fff; 
+    text-align: center;
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin-top: 10px; 
+    text-decoration: none; 
+}
+
+.btn:hover, .btn-home:hover {
+   background-color: #0056b3; 
+}
+
+a {
+   text-decoration:none; 
+   color:#007bff; 
+}
+
+.suggestions {
+   position: relative;
+   list-style-type:none; 
+   left: 10%;
+   margin-top :10px; 
+   display:flex; 
+   flex-direction : column;
+   align-items:center; 
+}
+
+.suggestions li { 
+   margin :5px 0; 
+   font-size :1.3vw;
+   transition :color 0.3s ease; 
+   text-align:center;
+}
+
+.suggestions li:hover {
+   color:#0056b3; 
+}
+
+.tabs { 
+   display:flex; 
+   justify-content :space-between; 
+   margin-bottom :20px; 
+}
+
+.tab { 
+   padding :10px; 
+   cursor:pointer; 
+   font-size :16px; 
+   color:#555; 
+   transition :color 0.3s ease, border-bottom 0.3s ease; 
+}
+
+.tab.active { 
+   border-bottom :2px solid #007bff; 
+   color:#007bff; 
+}
+
+.tab-content { 
+   display:none; 
+}
+.tab-content.active { 
+   display:block; 
+}
+.job-listings { 
+   display:flex; 
+   flex-direction :column; 
+}
+.job-listing { 
+   border-bottom :1px solid #e0e0e0; 
+   padding :10px 0; 
+}
+.job-listing:last-child { 
+   border-bottom:none; 
+}
+.job-title { 
+   font-size :18px; 
+   color:#007bff; 
+}
+.job-details { 
+   color:#888; 
+   font-size :14px; 
+}
+
+@media (max-width: 768px) {
+   .container {
+       flex-direction: column; 
+       height:auto; 
+   }
+   
+   .sidebar, .main-content {
+       flex-basis: auto; 
+       width: calc(100% - 20px); 
+       margin-top: 10px; 
+       max-width: calc(100% - 20px); 
+       align-self:center ;
+   }
+}
+
+@media (max-width: 450px) {
+   .sidebar, .main-content {
+       padding: 15px; 
+       margin-top: 5px;  
+       max-width: calc(100% - 20px); 
+       width:auto ; 
+       align-self:center ; 
+   }
+
+   h2 {
+       font-size: 18px; 
+       text-align:center ; 
+   }
+
+   .btn, .btn-home {
+       padding: 8px; 
+       font-size: 14px;  
+       max-width :calc(100% - 20px); 
+       width:auto ; 
+       align-self:center ; 
+   }
+
+   .job-title {
+       font-size: 16px;  
+       text-align:center ;
+   }
+
+   .job-details {
+       font-size: 12px;  
+       text-align:center ; 
+   }
+
+   .tabs {
+       flex-direction: column;  
+       align-items:center ;  
+       margin-bottom :15px ;  
+   }
+
+   .tab {
+       width :100%;  
+       text-align:center ;  
+       padding :8px ;  
+       font-size :14px ;  
+       border-bottom:none ;  
+       border-radius :5px ;  
+       background-color:#f4f4f4 ;  
+       margin-bottom :5px ;  
+      }
+}
